@@ -1,6 +1,8 @@
 # is-npm-package.json
 Check if a file is a valid npm package.json
 
+[![NPM](https://nodei.co/npm/is-npm-package.json.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/is-npm-package.json/)
+
 ## Install
 ### With npm
 ```bash
