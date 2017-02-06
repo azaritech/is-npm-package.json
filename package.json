@@ -1,12 +1,13 @@
 {
   "name": "is-npm-package.json",
-  "version": "0.0.1",
-  "description": "Open and test if a file is a valid npm package.json",
+  "version": "1.0.0",
+  "description": "Check if a file is a valid npm package.json",
   "main": "lib/index.js",
   "repository": "git@github.com:azaritech/is-npm-package.json.git",
   "author": "Azaritech",
   "license": "MIT",
-  "devDependencies": {
-    "lab": "^12.1.0"
+  "devDependencies": {},
+  "dependencies": {
+    "is-file-exists": "^1.1.0"
   }
 }

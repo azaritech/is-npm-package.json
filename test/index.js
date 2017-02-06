@@ -1,13 +1,19 @@
-const path = '/home/nico/dev/azaritech/david-cli/package.json';
-//const path = '../../package.json';
-const test = require('../lib');
+const { isNpmPackage } = require('is-npm-package.json');
 
-test.isFileExist(path, function (valid, message) {
-  if (!valid) {
-    console.log(valid);
-    console.log(message);
-  }
-  if (valid) {
-    console.log(valid);
-  }
-});
+// const result = isNpmPackage(Buffer.from('./package.json'));
+// if (result && !result.valid) {
+//   console.log(result.valid);
+//   console.log(result.message);
+// } else {
+//   console.log(result.valid);
+//   console.log(result.message);
+// }
+
+const result = isNpmPackage('./package.json');
+if (result && !result.valid) {
+  console.log(result.valid);
+  console.log(result.message);
+} else {
+  console.log(result.valid);
+  console.log(result.message);
+}
